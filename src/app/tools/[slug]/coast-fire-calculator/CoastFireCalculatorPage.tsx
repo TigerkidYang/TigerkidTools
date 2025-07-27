@@ -19,9 +19,9 @@ export function CoastFireCalculatorPage() {
         <p>
           Coast FIRE (Financial Independence, Retire Early) is a strategic
           approach where you save aggressively early in your career, then
-          "coast" to traditional retirement by allowing compound interest to
-          grow your investments without additional contributions. Unlike
-          traditional FIRE, you don't need to save enough to retire
+          &ldquo;coast&rdquo; to traditional retirement by allowing compound
+          interest to grow your investments without additional contributions.
+          Unlike traditional FIRE, you don&apos;t need to save enough to retire
           immediately—you only need enough to eventually reach financial
           independence by your target retirement age.
         </p>
@@ -99,7 +99,7 @@ export function CoastFireCalculatorPage() {
           </li>
           <li>
             <strong>Actionable Next Steps:</strong> Personalized recommendations
-            based on whether you've reached Coast FIRE or not
+            based on whether you&apos;ve reached Coast FIRE or not
           </li>
         </ul>
 
@@ -213,7 +213,7 @@ export function CoastFireCalculatorPage() {
         </ul>
         <p>
           This means you need $478,006 today to maintain $60,000 of{" "}
-          <em>today's purchasing power</em> in retirement.
+          <em>today&apos;s purchasing power</em> in retirement.
         </p>
 
         <h2>Strategies to Reach Your Coast FIRE Number Faster</h2>

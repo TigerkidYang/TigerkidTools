@@ -1,12 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
-import { notFound } from "next/navigation";
-import { blogs, Blog } from "@/lib/blogs";
-import { tools, Tool } from "@/lib/tools";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark.css";
 import { Card, CardHeader, CardContent } from "@/components/Card";
+import { Blog } from "@/lib/blogs";
+import { Tool } from "@/lib/tools";
 
 // A more detailed content generator for the technical blogs.
 const generateDummyContent = (slug: string) => {

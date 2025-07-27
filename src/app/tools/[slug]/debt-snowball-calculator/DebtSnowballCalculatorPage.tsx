@@ -19,9 +19,9 @@ export function DebtSnowballCalculatorPage() {
         <p>
           The debt snowball method is a debt repayment strategy where you focus
           on paying off your smallest debts first while making minimum payments
-          on larger debts. As each small debt is eliminated, you "roll" that
-          payment into the next smallest debt, creating a "snowball effect" that
-          builds momentum and motivation.
+          on larger debts. As each small debt is eliminated, you
+          &ldquo;roll&rdquo; that payment into the next smallest debt, creating
+          a &ldquo;snowball effect&rdquo; that builds momentum and motivation.
         </p>
         <p>
           Popularized by financial expert Dave Ramsey, this{" "}
@@ -46,7 +46,7 @@ export function DebtSnowballCalculatorPage() {
         <ul>
           <li>
             <strong>Debt Name:</strong> Give each debt a recognizable name
-            (e.g., "Visa Card", "Car Loan")
+            (e.g., &ldquo;Visa Card&rdquo;, &ldquo;Car Loan&rdquo;)
           </li>
           <li>
             <strong>Current Balance:</strong> The total amount you currently owe
@@ -66,13 +66,13 @@ export function DebtSnowballCalculatorPage() {
 
         <h3>Understanding Your Payoff Plan</h3>
         <p>
-          Once you've entered your debts, our{" "}
+          Once you&apos;ve entered your debts, our{" "}
           <strong>snowball method debt calculator</strong> will automatically:
         </p>
         <ul>
           <li>Sort your debts from smallest to largest balance</li>
           <li>Calculate your total debt-free timeline</li>
-          <li>Show total interest you'll pay</li>
+          <li>Show total interest you&apos;ll pay</li>
           <li>Compare savings versus paying only minimum amounts</li>
         </ul>
 
@@ -85,8 +85,8 @@ export function DebtSnowballCalculatorPage() {
           <li>Which debt to focus your extra payments on</li>
           <li>When each debt will be completely paid off</li>
           <li>
-            How your available payment amount "snowballs" as debts are
-            eliminated
+            How your available payment amount &ldquo;snowballs&rdquo; as debts
+            are eliminated
           </li>
           <li>Visual progress indicators to keep you motivated</li>
         </ul>
@@ -143,7 +143,10 @@ export function DebtSnowballCalculatorPage() {
         </p>
         <ul>
           <li>You need motivation to stick with your debt payoff plan</li>
-          <li>You've tried other methods but couldn't maintain consistency</li>
+          <li>
+            You&apos;ve tried other methods but couldn&apos;t maintain
+            consistency
+          </li>
           <li>You have several small debts that could be eliminated quickly</li>
           <li>
             The psychological benefit outweighs the mathematical cost for you
@@ -153,10 +156,11 @@ export function DebtSnowballCalculatorPage() {
           <strong>Choose the Debt Avalanche if:</strong>
         </p>
         <ul>
-          <li>You're highly motivated by saving money on interest</li>
+          <li>You&apos;re highly motivated by saving money on interest</li>
           <li>You can stay disciplined without quick wins</li>
           <li>
-            Your highest-interest debts aren't significantly larger than others
+            Your highest-interest debts aren&apos;t significantly larger than
+            others
           </li>
         </ul>
 
@@ -218,7 +222,7 @@ export function DebtSnowballCalculatorPage() {
             with it consistently
           </li>
           <li>
-            <strong>Perfectionism:</strong> One missed payment doesn't mean
+            <strong>Perfectionism:</strong> One missed payment doesn&apos;t mean
             failure—get back on track immediately
           </li>
         </ul>
@@ -229,7 +233,7 @@ export function DebtSnowballCalculatorPage() {
         <p>
           The debt snowball method is typically not the fastest way to pay off
           debt mathematically—that would be the debt avalanche method. However,
-          it's often the most effective in practice because it provides
+          it&apos;s often the most effective in practice because it provides
           psychological motivation that helps people stick to their plan. A debt
           payoff plan you can actually follow is better than a mathematically
           optimal plan you abandon.
@@ -238,9 +242,10 @@ export function DebtSnowballCalculatorPage() {
         <h3>What happens if I have extra money to pay one month?</h3>
         <p>
           Any extra money should go directly toward your smallest debt (the one
-          you're currently focusing on). This accelerates your timeline and gets
-          you to your first "win" even faster. Never split extra payments among
-          multiple debts—concentrate all extra payments on your target debt.
+          you&apos;re currently focusing on). This accelerates your timeline and
+          gets you to your first &ldquo;win&rdquo; even faster. Never split
+          extra payments among multiple debts—concentrate all extra payments on
+          your target debt.
         </p>
 
         <h3>Should I include my mortgage in the debt snowball?</h3>

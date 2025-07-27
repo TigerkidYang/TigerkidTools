@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { cn } from "@/lib/utils";
 import { CoastFireChart } from "./CoastFireChart";
 
@@ -28,7 +28,7 @@ export function CoastFireCalculator() {
   // Results state
   const [results, setResults] = useState<CoastFireResults | null>(null);
 
-  const calculateCoastFire = () => {
+  const calculateCoastFire = useCallback(() => {
     const yearsToRetirement = retirementAge - currentAge;
 
     if (yearsToRetirement <= 0) {
@@ -79,7 +79,16 @@ export function CoastFireCalculator() {
       realAnnualExpenses,
       targetRetirementAmount,
     });
-  };
+  }, [
+    currentAge,
+    retirementAge,
+    currentBalance,
+    annualExpenses,
+    expectedReturn,
+    inflationRate,
+    withdrawalRate,
+    monthlySavings,
+  ]);
 
   useEffect(() => {
     calculateCoastFire();
@@ -92,6 +101,7 @@ export function CoastFireCalculator() {
     inflationRate,
     withdrawalRate,
     monthlySavings,
+    calculateCoastFire,
   ]);
 
   const formatCurrency = (amount: number) => {
@@ -410,7 +420,7 @@ export function CoastFireCalculator() {
                 <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                   {results.isCoastFireReached ? (
                     <>
-                      <p>✅ You've reached Coast FIRE! You can now:</p>
+                      <p>✅ You&apos;ve reached Coast FIRE! You can now:</p>
                       <ul className="ml-4 list-disc space-y-1">
                         <li>
                           Reduce your savings rate and enjoy more lifestyle

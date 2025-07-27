@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { useState, useEffect, useCallback } from "react";
 
 interface Debt {
   id: string;
@@ -99,7 +98,7 @@ export function DebtSnowballCalculator() {
     );
   };
 
-  const calculateSnowball = () => {
+  const calculateSnowball = useCallback(() => {
     if (debts.length === 0) return;
 
     // Sort debts by balance (smallest first) for snowball method
@@ -108,12 +107,8 @@ export function DebtSnowballCalculator() {
     // Initialize tracking variables
     let month = 0;
     let totalInterest = 0;
-    let debtBalances = sortedDebts.map((debt) => ({ ...debt }));
+    const debtBalances = sortedDebts.map((debt) => ({ ...debt }));
     const paymentSchedule: PaymentScheduleItem[] = [];
-    const totalMinPayments = debts.reduce(
-      (sum, debt) => sum + debt.minPayment,
-      0
-    );
     let availableExtraPayment = extraPayment;
 
     while (debtBalances.some((debt) => debt.balance > 0)) {
@@ -154,7 +149,7 @@ export function DebtSnowballCalculator() {
           remainingExtraPayment = 0;
         }
 
-        // Don't pay more than the remaining balance + interest
+        // Don&apos;t pay more than the remaining balance + interest
         const maxPayment = debt.balance + monthlyInterest;
         payment = Math.min(payment, maxPayment);
 
@@ -203,13 +198,13 @@ export function DebtSnowballCalculator() {
       paymentSchedule,
       debtOrder: sortedDebts,
     });
-  };
+  }, [debts, extraPayment]);
 
   useEffect(() => {
     if (debts.length > 0) {
       calculateSnowball();
     }
-  }, [debts, extraPayment]);
+  }, [debts, extraPayment, calculateSnowball]);
 
   const formatCurrency = (amount: number) => {
     return new Intl.NumberFormat("en-US", {
@@ -244,7 +239,7 @@ export function DebtSnowballCalculator() {
 
         {/* Debts List */}
         <div className="space-y-4">
-          {debts.map((debt, index) => (
+          {debts.map((debt) => (
             <div
               key={debt.id}
               className="grid gap-4 rounded-lg border border-gray-200 p-4 dark:border-gray-600 md:grid-cols-6"
@@ -416,7 +411,7 @@ export function DebtSnowballCalculator() {
                 {formatCurrency(results.totalInterest)}
               </p>
               <p className="text-xs text-blue-700 dark:text-blue-300">
-                Interest you'll pay
+                Interest you&apos;ll pay
               </p>
             </div>
 

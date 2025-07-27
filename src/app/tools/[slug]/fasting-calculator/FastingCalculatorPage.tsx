@@ -26,7 +26,7 @@ export function FastingCalculatorPage() {
         <p>
           Our <strong>intermittent fasting calculator</strong> helps you plan
           your optimal fasting and eating windows based on your schedule and
-          goals. Whether you're using a 16:8 approach or exploring water
+          goals. Whether you&apos;re using a 16:8 approach or exploring water
           fasting, this tool provides personalized timing and weight loss
           estimates.
         </p>
@@ -98,8 +98,8 @@ export function FastingCalculatorPage() {
         <h2>Potential Benefits and Important Risks of Fasting</h2>
         <p>
           While our <strong>free intermittent fasting calculator</strong> can
-          help you plan your approach, it's crucial to understand both benefits
-          and risks:
+          help you plan your approach, it&apos;s crucial to understand both
+          benefits and risks:
         </p>
         <p>
           <strong>Potential Benefits:</strong>
@@ -133,7 +133,7 @@ export function FastingCalculatorPage() {
         <p>
           Any caloric intake technically breaks a fast. This includes food,
           sugary drinks, milk in coffee, and most supplements. However, black
-          coffee, plain tea, and water don't break your fast.
+          coffee, plain tea, and water don&apos;t break your fast.
         </p>
 
         <h3>Can I drink water, coffee, or tea while fasting?</h3>
@@ -155,7 +155,7 @@ export function FastingCalculatorPage() {
 
         <h3>Is intermittent fasting suitable for everyone?</h3>
         <p>
-          No. Intermittent fasting isn't recommended for pregnant or
+          No. Intermittent fasting isn&apos;t recommended for pregnant or
           breastfeeding women, people with diabetes (without medical
           supervision), those with a history of eating disorders, children, or
           individuals with certain medical conditions. Always consult a
@@ -180,7 +180,7 @@ export function FastingCalculatorPage() {
                 name: "What counts as breaking a fast?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Any caloric intake technically breaks a fast. This includes food, sugary drinks, milk in coffee, and most supplements. However, black coffee, plain tea, and water don't break your fast.",
+                  text: "Any caloric intake technically breaks a fast. This includes food, sugary drinks, milk in coffee, and most supplements. However, black coffee, plain tea, and water don&apos;t break your fast.",
                 },
               },
               {
@@ -204,7 +204,7 @@ export function FastingCalculatorPage() {
                 name: "Is intermittent fasting suitable for everyone?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No. Intermittent fasting isn't recommended for pregnant or breastfeeding women, people with diabetes, those with a history of eating disorders, children, or individuals with certain medical conditions.",
+                  text: "No. Intermittent fasting isn&apos;t recommended for pregnant or breastfeeding women, people with diabetes, those with a history of eating disorders, children, or individuals with certain medical conditions.",
                 },
               },
             ],

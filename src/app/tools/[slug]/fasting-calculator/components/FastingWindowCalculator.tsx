@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { cn } from "@/lib/utils";
 
 type FastingPlan = {
@@ -37,7 +37,7 @@ export function FastingWindowCalculator() {
     setLastMealTime(timeString);
   }, []);
 
-  const calculateWindows = () => {
+  const calculateWindows = useCallback(() => {
     if (!lastMealTime) return;
 
     const fastingHours = isCustom
@@ -86,13 +86,19 @@ export function FastingWindowCalculator() {
       eatingStart: formatTime(eatingStart),
       eatingEnd: formatTime(eatingEnd),
     });
-  };
+  }, [lastMealTime, isCustom, customFastingHours, selectedPlan.fastingHours]);
 
   useEffect(() => {
     if (lastMealTime) {
       calculateWindows();
     }
-  }, [selectedPlan, customFastingHours, lastMealTime, isCustom]);
+  }, [
+    selectedPlan,
+    customFastingHours,
+    lastMealTime,
+    isCustom,
+    calculateWindows,
+  ]);
 
   return (
     <div className="space-y-6">
