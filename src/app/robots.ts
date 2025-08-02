@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/", "/_next/", "/admin/", "/*.json", "/private/"],
       },
-      // 特别允许重要页面
+      // Specifically allow important pages
       {
         userAgent: "*",
         allow: ["/tools/", "/blog/", "/about"],

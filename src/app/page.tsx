@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  // 获取前3个最受欢迎的工具用于首页展示
+  // Get top 3 popular tools for homepage display
   const featuredTools = tools.slice(0, 3);
 
   return (

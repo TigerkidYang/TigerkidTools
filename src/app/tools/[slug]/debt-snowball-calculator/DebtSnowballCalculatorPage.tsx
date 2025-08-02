@@ -1,4 +1,5 @@
 import { DebtSnowballCalculator } from "./components/DebtSnowballCalculator";
+import Link from "next/link";
 
 export function DebtSnowballCalculatorPage() {
   return (
@@ -16,214 +17,116 @@ export function DebtSnowballCalculatorPage() {
       {/* Content Section */}
       <article className="mt-16 prose prose-gray dark:prose-invert max-w-none">
         <h2>What Is the Debt Snowball Method?</h2>
+
         <p>
-          The debt snowball method is a debt repayment strategy where you focus
-          on paying off your smallest debts first while making minimum payments
-          on larger debts. As each small debt is eliminated, you
-          &ldquo;roll&rdquo; that payment into the next smallest debt, creating
-          a &ldquo;snowball effect&rdquo; that builds momentum and motivation.
+          The <strong>debt snowball method</strong> is a debt-reduction strategy
+          that leverages psychological wins to build and maintain momentum.
+          Instead of focusing on high-interest rates, the strategy prioritizes
+          paying off your smallest debts first. Once the smallest debt is
+          eliminated, you &quot;roll&quot; the payment you were making on it
+          into the next-smallest debt. This creates a &quot;snowball
+          effect,&quot; causing your payment amount to grow as you knock out
+          each balance, which keeps you motivated on your journey to becoming
+          debt-free.
         </p>
+
         <p>
-          Popularized by financial expert Dave Ramsey, this{" "}
-          <strong>debt snowball calculator</strong> helps you create a
-          step-by-step plan to become debt-free. Unlike the debt avalanche
-          method (which targets highest interest rates first), the snowball
-          method prioritizes psychological wins to keep you motivated throughout
-          your debt-free journey.
+          This <strong>debt snowball calculator</strong> is your strategic
+          partner in this journey. It&apos;s a powerful{" "}
+          <strong>debt payoff planner</strong> that takes your unique financial
+          situation and creates a customized, step-by-step plan, showing you
+          exactly how and when you can achieve financial freedom.
         </p>
 
         <h2>How to Use Our Debt Snowball Calculator</h2>
+
         <p>
-          Our comprehensive <strong>snowball debt calculator</strong> makes it
-          easy to create and visualize your debt payoff plan:
+          Our calculator precisely simulates the debt snowball process.
+          Here&apos;s a breakdown of how it functions, directly reflecting the
+          logic in its code:
         </p>
 
-        <h3>Adding Your Debts</h3>
+        <ol>
+          <li>
+            <strong>Enter Your Debts:</strong> Add each of your debts, including
+            the name, current balance, minimum monthly payment, and interest
+            rate (APR). You also provide an &quot;Extra Monthly
+            Payment&quot;—this is the key accelerator in your{" "}
+            <strong>debt payoff plan</strong>.
+          </li>
+          <li>
+            <strong>Automatic Sorting:</strong> The moment you input your debts,
+            the calculator&apos;s algorithm automatically sorts them in
+            ascending order based on the <strong>smallest balance first</strong>
+            . This is the foundational step of the debt snowball method.
+          </li>
+          <li>
+            <strong>The Snowball Simulation:</strong> The tool then runs a
+            month-by-month simulation. Each month, it applies the minimum
+            payment to every debt to keep them current. Then, it takes your
+            entire &quot;Extra Monthly Payment&quot; <strong>PLUS</strong> the
+            minimum payments from any debts that have already been paid off, and
+            applies this combined &quot;snowball&quot; to the single smallest
+            debt remaining.
+          </li>
+          <li>
+            <strong>Your Custom Payoff Plan:</strong> The results show your
+            exact <strong>debt-free date</strong>, the total interest
+            you&apos;ll pay, and a clear visual of the payoff order. This
+            detailed amortization schedule is your roadmap, showing which debt
+            to focus on and when you can celebrate eliminating each one.
+          </li>
+        </ol>
+
+        <h2>Debt Snowball vs. Debt Avalanche: Which Is Right for You?</h2>
+
         <p>
-          Start by entering each of your debts into our{" "}
-          <strong>debt snowball method calculator</strong>:
+          Understanding the two primary debt-reduction strategies is crucial for
+          choosing the path that best suits your personality and financial
+          situation.
         </p>
+
+        <h3>The Debt Snowball (Behavioral Approach)</h3>
         <ul>
           <li>
-            <strong>Debt Name:</strong> Give each debt a recognizable name
-            (e.g., &ldquo;Visa Card&rdquo;, &ldquo;Car Loan&rdquo;)
+            <strong>Focus:</strong> Pay off debts from the smallest balance to
+            the largest.
           </li>
           <li>
-            <strong>Current Balance:</strong> The total amount you currently owe
+            <strong>Pros:</strong> Delivers quick psychological wins by
+            eliminating individual debts faster. This builds motivation and
+            makes it easier to stick with the plan long-term.
           </li>
           <li>
-            <strong>Minimum Payment:</strong> The required monthly payment
+            <strong>Cons:</strong> You will likely pay more in total interest
+            compared to the avalanche method if your smallest debts do not also
+            have the highest interest rates.
           </li>
           <li>
-            <strong>Interest Rate (APR):</strong> The annual percentage rate for
-            the debt
-          </li>
-        </ul>
-        <p>
-          Add as many debts as you need - our calculator can handle credit
-          cards, personal loans, student loans, and other consumer debts.
-        </p>
-
-        <h3>Understanding Your Payoff Plan</h3>
-        <p>
-          Once you&apos;ve entered your debts, our{" "}
-          <strong>snowball method debt calculator</strong> will automatically:
-        </p>
-        <ul>
-          <li>Sort your debts from smallest to largest balance</li>
-          <li>Calculate your total debt-free timeline</li>
-          <li>Show total interest you&apos;ll pay</li>
-          <li>Compare savings versus paying only minimum amounts</li>
-        </ul>
-
-        <h3>Reading Your Monthly Schedule</h3>
-        <p>
-          The detailed payment schedule shows you exactly what to pay each
-          month:
-        </p>
-        <ul>
-          <li>Which debt to focus your extra payments on</li>
-          <li>When each debt will be completely paid off</li>
-          <li>
-            How your available payment amount &ldquo;snowballs&rdquo; as debts
-            are eliminated
-          </li>
-          <li>Visual progress indicators to keep you motivated</li>
-        </ul>
-
-        <h2>Debt Snowball vs Debt Avalanche: Which Is Right for You?</h2>
-        <p>
-          Both strategies can help you become debt-free, but they take different
-          approaches:
-        </p>
-
-        <h3>Debt Snowball Method Benefits</h3>
-        <ul>
-          <li>
-            <strong>Quick Psychological Wins:</strong> Eliminating small debts
-            quickly builds confidence and motivation
-          </li>
-          <li>
-            <strong>Simplified Focus:</strong> You only concentrate on one debt
-            at a time
-          </li>
-          <li>
-            <strong>Behavioral Success:</strong> The method accounts for human
-            psychology, not just math
-          </li>
-          <li>
-            <strong>Reduced Stress:</strong> Fewer monthly bills to manage as
-            debts are eliminated
-          </li>
-          <li>
-            <strong>Momentum Building:</strong> Each success makes the next debt
-            easier to tackle
+            <strong>Best For:</strong> Individuals who thrive on positive
+            reinforcement and need to see progress to stay motivated.
           </li>
         </ul>
 
-        <h3>Debt Avalanche Method Benefits</h3>
+        <h3>The Debt Avalanche (Mathematical Approach)</h3>
         <ul>
           <li>
-            <strong>Mathematical Optimization:</strong> Saves the most money in
-            interest payments
+            <strong>Focus:</strong> Pay off debts from the highest interest rate
+            to the lowest.
           </li>
           <li>
-            <strong>Faster Overall Payoff:</strong> Typically results in
-            becoming debt-free sooner
+            <strong>Pros:</strong> This is the mathematically optimal method. It
+            saves you the most money in interest payments and will get you out
+            of debt in the shortest possible time.
           </li>
           <li>
-            <strong>Lower Total Cost:</strong> Minimizes the total amount paid
-            over time
-          </li>
-        </ul>
-
-        <h3>When to Choose Each Strategy</h3>
-        <p>
-          <strong>Choose the Debt Snowball if:</strong>
-        </p>
-        <ul>
-          <li>You need motivation to stick with your debt payoff plan</li>
-          <li>
-            You&apos;ve tried other methods but couldn&apos;t maintain
-            consistency
-          </li>
-          <li>You have several small debts that could be eliminated quickly</li>
-          <li>
-            The psychological benefit outweighs the mathematical cost for you
-          </li>
-        </ul>
-        <p>
-          <strong>Choose the Debt Avalanche if:</strong>
-        </p>
-        <ul>
-          <li>You&apos;re highly motivated by saving money on interest</li>
-          <li>You can stay disciplined without quick wins</li>
-          <li>
-            Your highest-interest debts aren&apos;t significantly larger than
-            others
-          </li>
-        </ul>
-
-        <h2>Debt Snowball Success Tips and Strategies</h2>
-        <p>
-          Maximize your success with these proven strategies for the debt
-          snowball method:
-        </p>
-        <ul>
-          <li>
-            <strong>Create a Budget:</strong> Know exactly where your money goes
-            each month
+            <strong>Cons:</strong> It might take a long time to pay off your
+            first debt if it has a large balance, which can be discouraging for
+            some people.
           </li>
           <li>
-            <strong>Find Extra Money:</strong> Cut unnecessary expenses to
-            increase your snowball payment
-          </li>
-          <li>
-            <strong>Use Windfalls Wisely:</strong> Apply tax refunds, bonuses,
-            and gifts directly to debt
-          </li>
-          <li>
-            <strong>Avoid New Debt:</strong> Stop using credit cards and taking
-            on new loans
-          </li>
-          <li>
-            <strong>Track Your Progress:</strong> Update your calculator monthly
-            to see your progress
-          </li>
-          <li>
-            <strong>Celebrate Milestones:</strong> Acknowledge each debt
-            elimination (without spending money!)
-          </li>
-          <li>
-            <strong>Stay Consistent:</strong> Make payments on time, every time
-          </li>
-        </ul>
-
-        <h2>Common Debt Snowball Mistakes to Avoid</h2>
-        <ul>
-          <li>
-            <strong>Including Your Mortgage:</strong> Focus on consumer debt
-            first; your home is typically excluded
-          </li>
-          <li>
-            <strong>Not Having an Emergency Fund:</strong> Save $1,000 first to
-            avoid new debt during emergencies
-          </li>
-          <li>
-            <strong>Continuing to Use Credit Cards:</strong> Cut up cards or
-            remove them from your wallet
-          </li>
-          <li>
-            <strong>Not Budgeting:</strong> You need to know where every dollar
-            goes
-          </li>
-          <li>
-            <strong>Giving Up Too Early:</strong> The method works if you stick
-            with it consistently
-          </li>
-          <li>
-            <strong>Perfectionism:</strong> One missed payment doesn&apos;t mean
-            failure—get back on track immediately
+            <strong>Best For:</strong> Highly disciplined, numbers-driven
+            individuals who are motivated primarily by financial efficiency.
           </li>
         </ul>
 
@@ -231,42 +134,88 @@ export function DebtSnowballCalculatorPage() {
 
         <h3>Is the debt snowball method the fastest way to pay off debt?</h3>
         <p>
-          The debt snowball method is typically not the fastest way to pay off
-          debt mathematically—that would be the debt avalanche method. However,
-          it&apos;s often the most effective in practice because it provides
-          psychological motivation that helps people stick to their plan. A debt
-          payoff plan you can actually follow is better than a mathematically
-          optimal plan you abandon.
+          Mathematically, no. The <strong>debt avalanche method</strong> is
+          typically faster and saves more money on interest. However, studies
+          and countless personal finance experts have shown that the debt
+          snowball method has a higher success rate because it focuses on
+          behavior and motivation. A plan you can stick to is always better than
+          a &quot;perfect&quot; plan you abandon.
         </p>
 
         <h3>What happens if I have extra money to pay one month?</h3>
         <p>
-          Any extra money should go directly toward your smallest debt (the one
-          you&apos;re currently focusing on). This accelerates your timeline and
-          gets you to your first &ldquo;win&rdquo; even faster. Never split
-          extra payments among multiple debts—concentrate all extra payments on
-          your target debt.
+          Any extra money—from a bonus, a side hustle, or a gift—should be
+          applied directly to your current target debt (the one with the
+          smallest balance). Do not spread the extra payment across multiple
+          debts. Concentrating your firepower is what makes the snowball method
+          so effective.
         </p>
 
         <h3>Should I include my mortgage in the debt snowball?</h3>
         <p>
-          Most financial experts recommend focusing on consumer debt first
-          (credit cards, personal loans, car payments) before tackling your
-          mortgage. Your home typically appreciates in value and mortgage
-          interest may be tax-deductible. Pay off high-interest consumer debt
-          first, then consider extra mortgage payments.
+          Most financial experts, including Dave Ramsey who popularized this
+          method, recommend focusing on consumer debt first (credit cards,
+          personal loans, car loans, etc.). Mortgages are typically
+          lower-interest, long-term loans secured by an appreciating asset.
+          It&apos;s usually best to complete your consumer debt snowball before
+          deciding whether to make extra payments on your mortgage.
         </p>
 
         <h3>Can I use the debt snowball method with student loans?</h3>
         <p>
-          Yes, student loans can be included in your debt snowball, especially
-          private student loans with higher interest rates. However, consider
-          the benefits of federal student loans (income-driven repayment plans,
-          potential forgiveness programs) before aggressively paying them off.
-          Private student loans are typically good candidates for the snowball
-          method.
+          Yes, student loans can absolutely be included in your debt snowball.
+          It&apos;s an effective way to tackle them, especially higher-interest
+          private student loans. For federal loans, you may want to consider
+          their unique benefits (like income-driven repayment plans or potential
+          forgiveness programs) before aggressively paying them off ahead of
+          other consumer debts.
         </p>
       </article>
+
+      {/* Related Blog Section */}
+      <section className="mt-16 bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+          Behind the Scenes: How This Calculator Works
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
+              The Algorithm Behind the Debt Snowball Calculator
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              Curious about the simulation logic, sorting algorithms, and
+              React/TypeScript code that powers this debt payoff tool? Dive deep
+              into the month-by-month calculations and learn why the smallest
+              balance first approach is so effective.
+            </p>
+            <Link
+              href="/blog/how-we-built-it-debt-snowball-calculator-algorithm"
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Read the Technical Deep Dive
+              <span className="ml-2">→</span>
+            </Link>
+          </div>
+          <div className="hidden md:block">
+            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg border border-gray-200 dark:border-gray-600">
+              <div className="space-y-3">
+                <div className="h-3 bg-gray-200 dark:bg-gray-600 rounded w-3/4"></div>
+                <div className="h-3 bg-gray-200 dark:bg-gray-600 rounded w-full"></div>
+                <div className="h-3 bg-gray-200 dark:bg-gray-600 rounded w-5/6"></div>
+                <div className="bg-gray-100 dark:bg-gray-600 p-3 rounded font-mono text-sm">
+                  <div className="text-green-600 dark:text-green-400">
+                    // Debt Sorting Algorithm
+                  </div>
+                  <div className="text-blue-600 dark:text-blue-400">
+                    sortedDebts = [...debts].sort((a, b) =&gt; a.balance -
+                    b.balance)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* JSON-LD Structured Data */}
       <script

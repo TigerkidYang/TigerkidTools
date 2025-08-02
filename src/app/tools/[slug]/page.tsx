@@ -2,14 +2,14 @@ import { notFound } from "next/navigation";
 import { tools } from "@/lib/tools";
 import type { Metadata } from "next";
 
-// 静态生成所有工具页面的路径
+// Statically generate paths for all tool pages
 export async function generateStaticParams() {
   return tools.map((tool) => ({
     slug: tool.slug,
   }));
 }
 
-// 动态生成每个工具页面的元数据
+// Dynamically generate metadata for each tool page
 export async function generateMetadata({
   params,
 }: {
@@ -25,7 +25,7 @@ export async function generateMetadata({
     };
   }
 
-  // 为债务雪球计算器设置特定的 SEO 元数据
+  // Set specific SEO metadata for debt snowball calculator
   if (slug === "debt-snowball-calculator") {
     return {
       title:
@@ -54,7 +54,7 @@ export async function generateMetadata({
     };
   }
 
-  // 为Coast FIRE计算器设置特定的 SEO 元数据
+  // Set specific SEO metadata for Coast FIRE calculator
   if (slug === "coast-fire-calculator") {
     return {
       title:
@@ -83,7 +83,7 @@ export async function generateMetadata({
     };
   }
 
-  // 为禁食计算器设置特定的 SEO 元数据
+  // Set specific SEO metadata for fasting calculator
   if (slug === "fasting-calculator") {
     return {
       title:
@@ -112,7 +112,7 @@ export async function generateMetadata({
     };
   }
 
-  // 默认元数据（用于其他工具）
+  // Default metadata for other tools
   return {
     title: `${tool.title} - TigerkidTools`,
     description: tool.description,
@@ -146,7 +146,7 @@ export default async function ToolPage({
     notFound();
   }
 
-  // 动态导入具体的工具组件
+  // Dynamically import specific tool components
   if (slug === "debt-snowball-calculator") {
     const { DebtSnowballCalculatorPage } = await import(
       "./debt-snowball-calculator/DebtSnowballCalculatorPage"
@@ -168,7 +168,7 @@ export default async function ToolPage({
     return <FastingCalculatorPage />;
   }
 
-  // 如果工具还没有实现，显示占位页面
+  // If tool is not yet implemented, show placeholder page
   return (
     <div className="container mx-auto max-w-5xl px-4 py-12">
       <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">

@@ -9,27 +9,26 @@ export interface Blog {
 export const blogs: Blog[] = [
   {
     slug: "deconstructing-the-coast-fire-calculator",
-    title:
-      "Deconstructing the Coast FIRE Calculator: The Math Behind Financial Freedom",
+    title: "Deconstructing the Coast FIRE Calculator: The Math Behind Financial Freedom",
     description:
-      "A technical deep dive into the formulas powering our Coast FIRE Calculator, including how we handle inflation, compound growth, and future value to map your path to financial independence.",
-    date: "2025-07-27",
+      "A technical deep dive into the formulas and financial principles powering our Coast FIRE Calculator, showing you exactly how we map your path to financial independence.",
+    date: "2025-08-03",
     relatedToolSlug: "coast-fire-calculator",
   },
   {
-    slug: "building-a-debt-snowball-calculator-algorithm",
-    title: "How We Built It: The Algorithm Behind the Debt Snowball Calculator",
+    slug: "the-science-and-code-behind-our-fasting-calculator",
+    title: "The Science & Code Behind Our Fasting Calculator: A Deep Dive",
     description:
-      "Explore the logic and data structures used in our Debt Snowball Calculator. We'll cover how the algorithm sorts debts, allocates payments, and simulates the snowball effect month by month.",
-    date: "2025-07-26",
-    relatedToolSlug: "debt-snowball-calculator",
+      "Explore the metabolic science, mathematical formulas, and React/TypeScript code that powers our Fasting Calculator. From BMR calculations using the Mifflin-St Jeor equation to component architecture.",
+    date: "2025-08-02",
+    relatedToolSlug: "fasting-calculator",
   },
   {
-    slug: "the-science-behind-the-fasting-calculator",
-    title: "The Science & Code Behind Our Fasting Calculator",
+    slug: "how-we-built-it-debt-snowball-calculator-algorithm",
+    title: "How We Built It: The Algorithm Behind the Debt Snowball Calculator",
     description:
-      "From calculating your fasting window to estimating weight loss with the Mifflin-St Jeor equation for BMR, this article breaks down the science and the TypeScript code that powers our Fasting Calculator.",
-    date: "2025-07-25",
-    relatedToolSlug: "fasting-calculator",
+      "A deep dive into the logic, math, and code that powers our Debt Snowball Calculator. Learn how we simulate the month-by-month debt payoff process and why smallest balance first works.",
+    date: "2025-08-02",
+    relatedToolSlug: "debt-snowball-calculator",
   },
 ];
