@@ -41,11 +41,11 @@ export default function AboutPage() {
         <section className="mb-12">
           <h2>Who is Tigerkid?</h2>
           <p>
-            Hello! I'm <strong>Tigerkid</strong>, the creator and developer
-            behind TigerkidTools. I'm passionate about researching and exploring
-            topics that help people live better, more fulfilling lives. My
-            journey led me to dive deep into several key areas that I believe
-            are fundamental to human wellbeing.
+            Hello! I&apos;m <strong>Tigerkid</strong>, the creator and developer
+            behind TigerkidTools. I&apos;m passionate about researching and
+            exploring topics that help people live better, more fulfilling
+            lives. My journey led me to dive deep into several key areas that I
+            believe are fundamental to human wellbeing.
           </p>
         </section>
 
@@ -54,7 +54,7 @@ export default function AboutPage() {
 
           <h3>Personal Finance & Financial Independence</h3>
           <p>
-            Financial health is the foundation of life freedom. I've spent
+            Financial health is the foundation of life freedom. I&apos;ve spent
             countless hours studying personal finance strategies, from the{" "}
             <strong>FIRE movement</strong> (Financial Independence, Retire
             Early) to debt management techniques like the{" "}
@@ -78,7 +78,7 @@ export default function AboutPage() {
 
           <h3>Physical Health & Wellness</h3>
           <p>
-            Your body is your most important asset. I'm fascinated by
+            Your body is your most important asset. I&apos;m fascinated by
             evidence-based approaches to health optimization, including{" "}
             <strong>intermittent fasting</strong>, nutrition science, and
             sustainable lifestyle changes. The{" "}
@@ -110,8 +110,8 @@ export default function AboutPage() {
               knowledge should be accessible, and good tools should be free
             </strong>
             . Throughout my research, I often found myself needing calculators
-            and tools that either didn't exist, were behind paywalls, or were
-            unnecessarily complicated.
+            and tools that either didn&apos;t exist, were behind paywalls, or
+            were unnecessarily complicated.
           </p>
 
           <p>
@@ -179,16 +179,16 @@ export default function AboutPage() {
           <h2>My Mission</h2>
           <p>
             My goal is to democratize access to the tools and knowledge that can
-            genuinely improve people's lives. Whether you're planning for
-            financial independence, optimizing your health, or just trying to
-            make better decisions, I want to provide you with the resources you
-            need—completely free.
+            genuinely improve people&apos;s lives. Whether you&apos;re planning
+            for financial independence, optimizing your health, or just trying
+            to make better decisions, I want to provide you with the resources
+            you need—completely free.
           </p>
 
           <p>
-            If you find these tools helpful, that's all the reward I need. And
-            if you have ideas for new tools or improvements, I'd love to hear
-            from you.
+            If you find these tools helpful, that&apos;s all the reward I need.
+            And if you have ideas for new tools or improvements, I&apos;d love
+            to hear from you.
           </p>
         </section>
 
