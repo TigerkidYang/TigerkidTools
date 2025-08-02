@@ -172,6 +172,8 @@ export function DebtSnowballCalculatorPage() {
         </p>
       </article>
 
+
+
       {/* Related Blog Section */}
       <section className="mt-16 bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
@@ -204,11 +206,10 @@ export function DebtSnowballCalculatorPage() {
                 <div className="h-3 bg-gray-200 dark:bg-gray-600 rounded w-5/6"></div>
                 <div className="bg-gray-100 dark:bg-gray-600 p-3 rounded font-mono text-sm">
                   <div className="text-green-600 dark:text-green-400">
-                    // Debt Sorting Algorithm
+                    {/* Debt Sorting Algorithm */}
                   </div>
                   <div className="text-blue-600 dark:text-blue-400">
-                    sortedDebts = [...debts].sort((a, b) =&gt; a.balance -
-                    b.balance)
+                    {'sortedDebts = [...debts].sort((a, b) => a.balance - b.balance)'}
                   </div>
                 </div>
               </div>

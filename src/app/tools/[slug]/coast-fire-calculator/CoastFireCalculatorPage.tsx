@@ -100,16 +100,7 @@ export function CoastFireCalculatorPage() {
         </ul>
 
         <h2>The Formula: How We Calculate Your Coast FIRE Number</h2>
-        <p>
-          Transparency is key to financial planning. Our calculator uses a
-          precise, inflation-aware formula to determine your Coast FIRE number,
-          which is a multi-step process. For a detailed technical breakdown, read
-          our article,{" "}
-          <a href="/blog/deconstructing-the-coast-fire-calculator">
-            Deconstructing the Coast FIRE Calculator
-          </a>
-          .
-        </p>
+
         <ol>
           <li>
             <strong>Step 1: Project Future Annual Expenses.</strong> We first
@@ -146,6 +137,49 @@ export function CoastFireCalculatorPage() {
           This inflation-first approach ensures a much more realistic and
           accurate goal compared to simpler calculators.
         </p>
+
+        {/* Related Blog Section */}
+        <section className="mt-16 bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
+            Behind the Scenes: How This Calculator Works
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
+                Deconstructing the Coast FIRE Calculator
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                Transparency is key to financial planning. Our calculator uses a
+                precise, inflation-aware formula. Dive deep into the multi-step
+                process in our technical breakdown.
+              </p>
+              <Link
+                href="/blog/deconstructing-the-coast-fire-calculator"
+                className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Read the Technical Deep Dive
+                <span className="ml-2">→</span>
+              </Link>
+            </div>
+            <div className="hidden md:block">
+              <div className="bg-white dark:bg-gray-700 p-6 rounded-lg border border-gray-200 dark:border-gray-600">
+                <div className="space-y-3">
+                  <div className="h-3 bg-gray-200 dark:bg-gray-600 rounded w-3/4"></div>
+                  <div className="h-3 bg-gray-200 dark:bg-gray-600 rounded w-full"></div>
+                  <div className="h-3 bg-gray-200 dark:bg-gray-600 rounded w-5/6"></div>
+                  <div className="bg-gray-100 dark:bg-gray-600 p-3 rounded font-mono text-sm">
+                    <div className="text-green-600 dark:text-green-400">
+                      {/* Coast FIRE Formula Snippet */}
+                    </div>
+                    <div className="text-blue-600 dark:text-blue-400">
+                      Target / (1 + Return) ^ Years
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <h2>Coast FIRE vs. Traditional FIRE vs. Barista FIRE</h2>
         <p>
@@ -345,8 +379,6 @@ export function CoastFireCalculatorPage() {
                 <span className="text-purple-500">Target Amount</span> = Future
                 Expenses / <span className="text-blue-400">SWR</span>
                 <br />
-                <span className="text-purple-500">Coast FIRE</span> = Target Amount
-                / (1 + <span className="text-blue-400">Return</span>) ^ Years
               </p>
             </div>
           </div>

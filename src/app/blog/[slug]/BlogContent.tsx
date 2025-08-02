@@ -209,9 +209,12 @@ const coastFireNumber = targetRetirementAmount / Math.pow(1 + expectedReturn / 1
               </p>
               <p>
                 Ready to find your number?{" "}
-                <a href="/tools/coast-fire-calculator">
+                <Link
+                  href="/tools/coast-fire-calculator"
+                  className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                >
                   Try the Coast FIRE Calculator now
-                </a>
+                </Link>
                 .
               </p>
             </article>
@@ -226,14 +229,13 @@ const coastFireNumber = targetRetirementAmount / Math.pow(1 + expectedReturn / 1
                 to build another fasting app; we wanted to create a transparent,
                 accurate, and educational tool.
               </p>
-
               <p>
                 This article pulls back the curtain on our{" "}
                 <Link
                   href="/tools/fasting-calculator"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                 >
-                  Fasting Calculator
+                  Explore the Fasting Calculator
                 </Link>
                 . We&apos;ll explore the scientific principles behind
                 intermittent fasting, break down the precise mathematical
@@ -423,12 +425,12 @@ const [weight, setWeight] = useState<number>(70);`}
               </p>
               <p>
                 Ready to plan your schedule or estimate your results?{" "}
-                <a
+                <Link
                   href="/tools/fasting-calculator"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                 >
                   <strong>Give the Fasting Calculator a try now.</strong>
-                </a>
+                </Link>
               </p>
             </article>
           ) : blog.slug ===
@@ -617,12 +619,12 @@ const [debts, setDebts] = useState<Debt[]>(/* ...initial debts... */);`}
               </p>
               <p>
                 Ready to see how fast you can become debt-free?{" "}
-                <a
+                <Link
                   href="/tools/debt-snowball-calculator"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                 >
                   <strong>Try the Debt Snowball Calculator now</strong>
-                </a>
+                </Link>
                 .
               </p>
             </article>
