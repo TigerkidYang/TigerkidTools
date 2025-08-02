@@ -72,7 +72,7 @@ export function DebtSnowballCalculatorPage() {
           <li>
             <strong>Your Custom Payoff Plan:</strong> The results show your
             exact <strong>debt-free date</strong>, the total interest
-            you&apos;ll pay, and a clear visual of the payoff order. This
+            you&apos;ll pay, and a clear visual of the payoff order. {/* TODO: Add a visual representation or code snippet */} This
             detailed amortization schedule is your roadmap, showing which debt
             to focus on and when you can celebrate eliminating each one.
           </li>

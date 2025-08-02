@@ -328,11 +328,11 @@ export function CoastFireCalculatorPage() {
               your path to financial independence.
             </p>
             <Link
-              href="/blog/deconstructing-the-coast-fire-calculator"
-              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              href="/blog/deconstructing-the-coast-fire-calculator/"
+              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
             >
-              Read the Technical Deep Dive
-              <span className="ml-2">→</span>
+              Deconstructing the Coast FIRE Calculator: A Deep Dive into the
+              Math and Tech
             </Link>
           </div>
           <div className="hidden md:block">

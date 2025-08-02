@@ -106,7 +106,7 @@ export function FastingCalculatorPage() {
             Total Daily Energy Expenditure (TDEE) by multiplying your BMR by an
             activity multiplier corresponding to the activity level you selected
             (Sedentary, Lightly Active, etc.). Your TDEE represents your total
-            daily calorie burn.
+            daily calorie burn. {/* TODO: Add a visual representation or code snippet */}
           </li>
           <li>
             <strong>Estimating Fat Loss:</strong> During a fast, your calorie

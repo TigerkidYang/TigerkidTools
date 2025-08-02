@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark.css";
+import Link from "next/link";
 import { Card, CardHeader, CardContent } from "@/components/Card";
 import { Blog } from "@/lib/blogs";
 import { Tool } from "@/lib/tools";
@@ -46,12 +47,12 @@ export function BlogContent({ blog, relatedTool }: BlogContentProps) {
                 your future freedom. You no longer need to save for retirement.
                 This article provides a technical deep dive into the formulas and
                 financial principles powering our{" "}
-                <a
+                <Link
                   href="/tools/coast-fire-calculator"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                 >
                   Coast FIRE Calculator
-                </a>
+                </Link>
                 , showing you exactly how we map your path to financial
                 independence.
               </p>
@@ -228,12 +229,12 @@ const coastFireNumber = targetRetirementAmount / Math.pow(1 + expectedReturn / 1
 
               <p>
                 This article pulls back the curtain on our{" "}
-                <a
+                <Link
                   href="/tools/fasting-calculator"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                 >
                   Fasting Calculator
-                </a>
+                </Link>
                 . We&apos;ll explore the scientific principles behind
                 intermittent fasting, break down the precise mathematical
                 formulas our calculator uses to estimate weight loss, and
@@ -443,12 +444,12 @@ const [weight, setWeight] = useState<number>(70);`}
 
               <p>
                 When we decided to build our{" "}
-                <a
+                <Link
                   href="/tools/debt-snowball-calculator"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
                 >
-                  <strong>Debt Snowball Calculator</strong>
-                </a>
+                  Debt Snowball Calculator
+                </Link>
                 , our goal was to create a tool that was not only accurate but
                 also transparent. We wanted to show you exactly how the snowball
                 gains momentum and charts your path to a debt-free life. This
