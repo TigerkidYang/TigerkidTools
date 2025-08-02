@@ -20,6 +20,9 @@ export function Header() {
           <Link href="/blog" className="transition-colors hover:text-white">
             Blog
           </Link>
+          <Link href="/about" className="transition-colors hover:text-white">
+            About
+          </Link>
         </div>
       </nav>
     </header>
