@@ -18,20 +18,21 @@ export function CoastFireCalculatorPage() {
       <article className="mt-16 prose prose-gray dark:prose-invert max-w-none">
         <h2>What Is Coast FIRE? A Path to Financial Flexibility</h2>
         <p>
-          <strong>Coast FIRE</strong> (Financial Independence, Retire Early) is a
-          major milestone on the path to financial independence. It means you have
-          saved and invested enough money that, without contributing another
-          dollar, your portfolio will grow to support a traditional retirement by
-          age 65. Once you hit your <strong>Coast FIRE number</strong>, your
-          investment&apos;s compound growth does the rest of the heavy lifting.
+          <strong>Coast FIRE</strong> (Financial Independence, Retire Early) is
+          a major milestone on the path to financial independence. It means you
+          have saved and invested enough money that, without contributing
+          another dollar, your portfolio will grow to support a traditional
+          retirement by age 65. Once you hit your{" "}
+          <strong>Coast FIRE number</strong>, your investment&apos;s compound
+          growth does the rest of the heavy lifting.
         </p>
         <p>
-          This doesn&apos;t mean you retire immediately. Instead, it means you are no
-          longer required to save for retirement. You only need to earn enough to
-          cover your current living expenses, giving you immense career and life
-          flexibility. You can switch to a less demanding job, pursue a passion
-          project, or work part-time, all with the peace of mind that your
-          retirement is already secured. Our{" "}
+          This doesn&apos;t mean you retire immediately. Instead, it means you
+          are no longer required to save for retirement. You only need to earn
+          enough to cover your current living expenses, giving you immense
+          career and life flexibility. You can switch to a less demanding job,
+          pursue a passion project, or work part-time, all with the peace of
+          mind that your retirement is already secured. Our{" "}
           <strong>Coast FIRE calculator</strong> is designed to find that exact
           number for you.
         </p>
@@ -40,25 +41,25 @@ export function CoastFireCalculatorPage() {
         <p>
           This comprehensive <strong>FIRE calculator</strong> is designed to
           provide a clear, actionable picture of your journey to financial
-          independence. It requires a few key inputs about your financial life to
-          generate its projections.
+          independence. It requires a few key inputs about your financial life
+          to generate its projections.
         </p>
 
         <h3>Understanding the Inputs</h3>
         <ul>
           <li>
-            <strong>Current Age &amp; Retirement Age:</strong> Defines the timeline
-            for your investments to grow. The longer the timeline, the more
-            powerful compound interest becomes.
+            <strong>Current Age &amp; Retirement Age:</strong> Defines the
+            timeline for your investments to grow. The longer the timeline, the
+            more powerful compound interest becomes.
           </li>
           <li>
             <strong>Current Investment Balance:</strong> The starting point for
             your portfolio.
           </li>
           <li>
-            <strong>Annual Expenses in Retirement:</strong> Your estimated yearly
-            spending in today&apos;s dollars. This is used to calculate your total
-            retirement nest egg.
+            <strong>Annual Expenses in Retirement:</strong> Your estimated
+            yearly spending in today&apos;s dollars. This is used to calculate
+            your total retirement nest egg.
           </li>
           <li>
             <strong>Monthly Savings:</strong> The amount you are currently
@@ -66,9 +67,11 @@ export function CoastFireCalculatorPage() {
             how long it will take you to reach your Coast FIRE number.
           </li>
           <li>
-            <strong>Advanced Settings (Return, Inflation, Withdrawal Rate):</strong>
-            These three assumptions are critical for an accurate forecast. We use
-            a 7% expected return, 3% inflation, and 4% withdrawal rate as
+            <strong>
+              Advanced Settings (Return, Inflation, Withdrawal Rate):
+            </strong>
+            These three assumptions are critical for an accurate forecast. We
+            use a 7% expected return, 3% inflation, and 4% withdrawal rate as
             common, sensible defaults.
           </li>
         </ul>
@@ -80,7 +83,8 @@ export function CoastFireCalculatorPage() {
         <ul>
           <li>
             <strong>Your Coast FIRE Number:</strong> This is the magic number.
-            It&apos;s the amount you need in your investment accounts <em>today</em>
+            It&apos;s the amount you need in your investment accounts{" "}
+            <em>today</em>
             to be able to coast to a full retirement.
           </li>
           <li>
@@ -108,28 +112,28 @@ export function CoastFireCalculatorPage() {
             adjusted for inflation.
             <br />
             <code>
-              Future Expenses = Annual Expenses * (1 + Inflation Rate) ^ Years to
-              Retirement
+              Future Expenses = Annual Expenses * (1 + Inflation Rate) ^ Years
+              to Retirement
             </code>
           </li>
           <li>
-            <strong>Step 2: Calculate Target Retirement Amount.</strong> Next, we
-            determine your total nest egg needed at retirement using the 4% Safe
-            Withdrawal Rate (SWR) rule.
+            <strong>Step 2: Calculate Target Retirement Amount.</strong> Next,
+            we determine your total nest egg needed at retirement using the 4%
+            Safe Withdrawal Rate (SWR) rule.
             <br />
             <code>
               Target Amount = Future Expenses / (Withdrawal Rate / 100)
             </code>
           </li>
           <li>
-            <strong>Step 3: Calculate Your Coast FIRE Number.</strong> Finally, we
-            calculate the present value of that future target amount. This tells
-            us how much money you need <em>today</em> that will grow to the
-            target amount, based on your expected investment return.
+            <strong>Step 3: Calculate Your Coast FIRE Number.</strong> Finally,
+            we calculate the present value of that future target amount. This
+            tells us how much money you need <em>today</em> that will grow to
+            the target amount, based on your expected investment return.
             <br />
             <code>
-              Coast FIRE Number = Target Amount / (1 + Expected Return) ^ Years to
-              Retirement
+              Coast FIRE Number = Target Amount / (1 + Expected Return) ^ Years
+              to Retirement
             </code>
           </li>
         </ol>
@@ -230,19 +234,21 @@ export function CoastFireCalculatorPage() {
           The 4% rule, based on the Trinity Study, is a widely used benchmark in
           retirement planning. It suggests you can withdraw 4% of your initial
           portfolio value each year (adjusted for inflation) with a very low
-          probability of running out of money over 30 years. While it&apos;s a solid
-          starting point, some financial planners now suggest a more conservative
-          rate of 3.5% to 3.8% to account for modern market volatility. Our
-          calculator allows you to adjust this rate in the advanced settings.
+          probability of running out of money over 30 years. While it&apos;s a
+          solid starting point, some financial planners now suggest a more
+          conservative rate of 3.5% to 3.8% to account for modern market
+          volatility. Our calculator allows you to adjust this rate in the
+          advanced settings.
         </p>
 
         <h3>How do I account for taxes in my calculation?</h3>
         <p>
           This calculator&apos;s projections are pre-tax. When estimating your
-          &quot;Annual Expenses in Retirement,&quot; you should consider your total
-          spending needs, including what you&apos;ll owe in taxes on withdrawals
-          from accounts like a traditional 401(k) or IRA. Roth IRA withdrawals
-          are tax-free, which can significantly impact your retirement plan.
+          &quot;Annual Expenses in Retirement,&quot; you should consider your
+          total spending needs, including what you&apos;ll owe in taxes on
+          withdrawals from accounts like a traditional 401(k) or IRA. Roth IRA
+          withdrawals are tax-free, which can significantly impact your
+          retirement plan.
         </p>
 
         <h3>What&apos;s a realistic &quot;Expected Annual Return&quot;?</h3>
@@ -344,46 +350,6 @@ export function CoastFireCalculatorPage() {
           and goals.
         </p>
       </article>
-
-      {/* Related Blog Section */}
-      <section className="mt-16 bg-gray-50 dark:bg-gray-800 p-8 rounded-lg">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
-          Behind the Scenes: How This Calculator Works
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-          <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
-              Deconstructing the Coast FIRE Calculator
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Curious about the inflation-aware formulas, time value of money
-              principles, and the React/TypeScript code that powers this tool?
-              Dive deep into the step-by-step calculations and learn how we map
-              your path to financial independence.
-            </p>
-            <Link
-              href="/blog/deconstructing-the-coast-fire-calculator/"
-              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              Deconstructing the Coast FIRE Calculator: A Deep Dive into the
-              Math and Tech
-            </Link>
-          </div>
-          <div className="hidden md:block">
-            <div className="bg-white dark:bg-gray-700 p-4 rounded-lg border border-gray-200 dark:border-gray-600">
-              <p className="font-mono text-sm text-gray-500 dark:text-gray-400">
-                <span className="text-purple-500">Future Expenses</span> = Annual
-                Expenses * (1 + <span className="text-blue-400">Inflation</span>) ^
-                Years
-                <br />
-                <span className="text-purple-500">Target Amount</span> = Future
-                Expenses / <span className="text-blue-400">SWR</span>
-                <br />
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* JSON-LD Structured Data */}
       <script

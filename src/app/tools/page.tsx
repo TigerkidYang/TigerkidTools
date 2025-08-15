@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   title: "Tools - TigerkidTools",
   description:
     "A collection of free and easy-to-use online tools for developers, designers, and everyone.",
+  alternates: {
+    canonical: "https://tigerkidtools.com/tools",
+  },
+  openGraph: {
+    title: "Tools - TigerkidTools",
+    description:
+      "A collection of free and easy-to-use online tools for developers, designers, and everyone.",
+    url: "https://tigerkidtools.com/tools",
+    siteName: "TigerkidTools",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tools - TigerkidTools",
+    description:
+      "A collection of free and easy-to-use online tools for developers, designers, and everyone.",
+  },
 };
 
 export default function ToolsPage() {

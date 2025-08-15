@@ -121,6 +121,9 @@ export function DebtSnowballCalculator() {
 
       let remainingExtraPayment = availableExtraPayment;
 
+      // Determine the first non-paid debt index for this month
+      const targetIndex = debtBalances.findIndex((d) => d.balance > 0);
+
       // Process each debt
       for (let i = 0; i < debtBalances.length; i++) {
         const debt = debtBalances[i];
@@ -143,8 +146,8 @@ export function DebtSnowballCalculator() {
         // Determine payment amount
         let payment = debt.minPayment;
 
-        // Apply extra payment to the smallest debt first
-        if (i === 0 && remainingExtraPayment > 0) {
+        // Apply extra payment to the first non-paid debt for this month
+        if (i === targetIndex && remainingExtraPayment > 0) {
           payment += remainingExtraPayment;
           remainingExtraPayment = 0;
         }

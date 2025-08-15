@@ -6,6 +6,23 @@ export const metadata: Metadata = {
   title: "Blog - TigerkidTools",
   description:
     "Read articles and tutorials about finance, development, and more.",
+  alternates: {
+    canonical: "https://tigerkidtools.com/blog",
+  },
+  openGraph: {
+    title: "Blog - TigerkidTools",
+    description:
+      "Read articles and tutorials about finance, development, and more.",
+    url: "https://tigerkidtools.com/blog",
+    siteName: "TigerkidTools",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog - TigerkidTools",
+    description:
+      "Read articles and tutorials about finance, development, and more.",
+  },
 };
 
 export default function BlogPage() {
